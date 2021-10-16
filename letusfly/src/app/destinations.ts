@@ -2,7 +2,7 @@ export const destinations = [
 
     {
   
-      country: "Agypt",
+      country: "Egypt",
 
       city: "Cairo",
 

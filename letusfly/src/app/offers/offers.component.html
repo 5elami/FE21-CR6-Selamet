@@ -1,22 +1,22 @@
 
 <h2>Products</h2>
 
-<div *ngFor="let destinations of destination ; index as pro">
+<div *ngFor="let destinations of destination ; index as x">
 
  <h3>
-
-   <a routerLink="destinations/{{pro}}" >
-     {{ destinations.country }}
+     
+   <a routerLink="destinations/{{x}}" >
+     {{ destinations.Hotel }}
     
     </a>
 
  </h3>
 
- <p *ngIf="destinations.description ">
+ <div *ngIf="destinations.description ">
     <h3>{{ destinations.city }}</h3>
     <h4>{{ destinations.price | currency }}</h4>
   Description: {{ destinations.description }}
 
-</p>
+ </div>
 
 </div>
