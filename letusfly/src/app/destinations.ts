@@ -4,13 +4,13 @@ export const destinations = [
   
       country: "Agypt",
 
-      city: "Cairo"
+      city: "Cairo",
 
-      Hotel: "Blabla"
+      Hotel: "Blabla",
 
-      Rating: "4stars"
+      Rating: "4stars",
 
-      price: "flight"
+      price: "flight",
   
       priceAnclsv: 799,
   
@@ -22,13 +22,13 @@ export const destinations = [
   
         country: "Norway",
   
-        city: "Oslo"
+        city: "Oslo",
   
-        Hotel: "Blabla"
+        Hotel: "Blabla",
   
-        Rating: "3stars"
+        Rating: "3stars",
   
-        price: "flight"
+        price: "flight",
     
         priceAnclsv: 799,
     
@@ -40,13 +40,13 @@ export const destinations = [
   
         country: "Spain",
   
-        city: "Ibiza"
+        city: "Ibiza",
   
-        Hotel: "Muchacho"
+        Hotel: "Muchacho",
   
-        Rating: "4stars"
+        Rating: "4stars",
   
-        price: "flight"
+        price: "flight",
     
         priceAnclsv: 799,
     
@@ -58,13 +58,13 @@ export const destinations = [
   
         country: "Montenegro",
   
-        city: "Kotor"
+        city: "Kotor",
   
-        Hotel: "Svezda"
+        Hotel: "Svezda",
   
-        Rating: "4stars"
+        Rating: "4stars",
   
-        price: "flight"
+        price: "flight",
     
         priceAnclsv: 799,
     
