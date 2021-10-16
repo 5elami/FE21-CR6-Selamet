@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { destinations } from '../destinations';
+
 
 @Component({
   selector: 'home',
@@ -8,8 +8,8 @@ import { destinations } from '../destinations';
 })
 export class HomeComponent implements OnInit {
 
-  destination = destinations;
   
+
   constructor() { }
 
   ngOnInit(): void {

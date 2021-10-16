@@ -5,6 +5,10 @@ import { OffersComponent } from './offers/offers.component';
 
 const routes: Routes = [{
   path: "", component: HomeComponent  
+},{
+
+  path: 'Offers/:x', component: OffersComponent
+
 }];
 
 @NgModule({
