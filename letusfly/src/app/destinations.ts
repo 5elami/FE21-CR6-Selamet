@@ -14,7 +14,7 @@ export const destinations = [
   
       priceAnclsv: 799,
   
-      description: 'A large phone with one of the best screens'
+      description: 'Dessert trips and luxus Hotels in Egypt are available this season '
   
     },
   

@@ -1,18 +1,23 @@
+<body class = "">
+    
 
-<h2>Products</h2>
+<h2 class="text-center">Products</h2>
 
 <div *ngFor="let destinations of destination ; index as x">
 
  <h3>
      
    <a routerLink="destinations/{{x}}" >
-     {{ destinations.Hotel }}
+     {{ destinations.country }}
     
     </a>
 
  </h3>
+ <!--colums-->
+  
 
  <div *ngIf="destinations.description ">
+     
     <h3>{{ destinations.city }}</h3>
     <h4>{{ destinations.price | currency }}</h4>
   Description: {{ destinations.description }}
@@ -20,3 +25,4 @@
  </div>
 
 </div>
+</body>
