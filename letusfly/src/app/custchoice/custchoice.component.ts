@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-custchoice',
+  selector: 'custchoice',
   templateUrl: './custchoice.component.html',
   styleUrls: ['./custchoice.component.css']
 })

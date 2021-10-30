@@ -1,0 +1,16 @@
+body {
+    height:300vh;
+    width: 100vw;
+    background-image: url(https://www.dsi-reisen.de/wp-content/uploads/2013/05/Two-Bedroom-Hilltop-Ocean-View-Suite-Copy1-e1494332407274.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#cardimg {
+    height: 25vh;
+}
+#thrdcrdimg {
+    height: 25vh;
+}
+#frstcrdimg {
+    height: 25vh;
+}

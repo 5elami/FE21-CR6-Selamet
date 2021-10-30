@@ -10,11 +10,13 @@ export const destinations = [
 
       Rating: "4stars",
 
-      price: "flight",
+      price: "Other flight",
   
       priceAnclsv: 799,
   
-      description: 'Dessert trips and luxus Hotels in Egypt are available this season '
+      description: 'Dessert trips and luxus Hotels in Egypt are available this season ',
+
+      strtdate:"15.10.2021"
   
     },
   
@@ -28,11 +30,13 @@ export const destinations = [
   
         Rating: "3stars",
   
-        price: "flight",
+        price: "Other flight",
     
-        priceAnclsv: 799,
+        priceAnclsv: 679,
     
-        description: 'A large phone with one of the best screens'
+        description: 'Refreshing and entertaining nature of Norway is the to go place for familys',
+
+        strtdate:"22.10.2021"
     
       },
 
@@ -46,11 +50,13 @@ export const destinations = [
   
         Rating: "4stars",
   
-        price: "flight",
+        price: "Other flight",
     
-        priceAnclsv: 799,
+        priceAnclsv: 365,
     
-        description: 'A large phone with one of the best screens'
+        description: 'Sun Sand and Tropical nightlife is what our customers love about Spain besides the culture.',
+        
+        strtdate:"05.10.2021"
     
       },
 
@@ -64,11 +70,13 @@ export const destinations = [
   
         Rating: "4stars",
   
-        price: "flight",
+        price: "Flight",
     
-        priceAnclsv: 799,
+        priceAnclsv: 550,
     
-        description: 'A large phone with one of the best screens'
+        description: 'The coasts of montenegro make a quite and relaxing time possible for familys and Historical Trips',
+
+        strtdate:"28.10.2021"
     
       },
   

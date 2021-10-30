@@ -1,25 +1,46 @@
-<body class = "">
-    
+<div id="booking">
+<bars></bars>    
 
-<h2 class="text-center">Products</h2>
+<h2 class="text-center">Hotels and accomodation</h2>
 
 <div *ngFor="let destinations of destination ; index as x">
-  <a routerLink="/destinations/{{x}}" >
-    <h3>
-     
-    {{ destinations.country }}
+  <div routerLink="/destinations/{{x}}" >
     
-     </h3>
-  </a>
+      <div id="hotelcard" class="card text-center text-white bg-warning mb-5 opacity-75">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" >Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">{{destinations.price}} for this direction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">Galery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body bg-dark">
+          <h5 class="card-title">{{ destinations.country }}</h5>
+          <p class="card-text">{{ destinations.description }}</p>
+          <p class="card-text"> next available date {{destinations.strtdate}}</p>
+          <p class="card-text">1 Person, 1 week {{destinations.priceAnclsv}} all inklusive €</p>
+          <a href="myplan" class="btn btn-warning">Further plans on this offer</a>
+        </div>
+      
+    
+    
+    </div>
+  </div>
  <!--colums-->
   
 
  <p *ngIf="destinations.description ">
      
     
-  Description: {{ destinations.description }}
+  
 
  </p>
 
 </div>
-</body>
+</div>
