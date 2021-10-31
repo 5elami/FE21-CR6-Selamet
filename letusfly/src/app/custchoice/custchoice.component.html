@@ -1,12 +1,12 @@
 <div id="custback">
   
-  <h1 class="text-center text-warning" >Your almost there!</h1>
-  <img src="assets/photos/running.png" alt="" height="125vh">
+  <h1 class="text-center text-warning" >You´r almost there!</h1>
+  <img src="assets/photos/running.png" alt="" height="125vh " >
   <!-- below in this card i put  travel optional to organize the logistics for the chosen direction-->
     </div>
-    <div class="row row-cols row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="row row-cols row-cols-sm-2 row-cols-md-3 g-3 bg-warning ">
       <div class="col" *ngFor="let choice of items">
-          <div class="card m-2" style="width:18rem;">
+          <div class="card m-2 bg-primary opacity-75" style="width:18rem;">
               <img src=".." class="img-fluid rounded-start" alt="{{ choice.destination }}">
               <div class="card-header">
                   <h5 class="card-title">{{ choice.country }}</h5>
