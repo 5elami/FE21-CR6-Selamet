@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { destinations } from '../destinations';
+import { CartService } from '../cart.service';
 
 
 
@@ -11,17 +11,16 @@ import { destinations } from '../destinations';
 })
 export class OffersComponent implements OnInit {
 
-  destination = destinations;
+  destinations = destinations;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private cs:CartService) { }
+  addToCart(items:any) {
+    alert("Your Trip to " + items.country + " was booked!");
+    this.cs.addToCart(items);
+  }
+  
+  ngOnInit(): void {  
 
-  ngOnInit(): void {
-    this.route.paramMap.subscribe( params =>{
-      let x : any = params.get(`x`);
-      this.destination = destinations;
-
-    } )
-    };
   }
 
-
+}

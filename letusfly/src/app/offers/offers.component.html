@@ -3,8 +3,7 @@
 
 <h2 class="text-center">Hotels and accomodation</h2>
 
-<div *ngFor="let destinations of destination ; index as x">
-  <div routerLink="/destinations/{{x}}" >
+<div *ngFor="let destination of destinations">
     
       <div id="hotelcard" class="card text-center text-white bg-warning mb-5 opacity-75">
         <div class="card-header">
@@ -13,7 +12,7 @@
               <a class="nav-link active" aria-current="true" >Active</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">{{destinations.price}} for this direction</a>
+              <a class="nav-link " href="#">{{ destination.price }} for this direction</a>
             </li>
             <li class="nav-item">
               <a class="nav-link ">Galery</a>
@@ -21,11 +20,11 @@
           </ul>
         </div>
         <div class="card-body bg-dark">
-          <h5 class="card-title">{{ destinations.country }}</h5>
-          <p class="card-text">{{ destinations.description }}</p>
-          <p class="card-text"> next available date {{destinations.strtdate}}</p>
-          <p class="card-text">1 Person, 1 week {{destinations.priceAnclsv}} all inklusive €</p>
-          <a href="myplan" class="btn btn-warning">Further plans on this offer</a>
+          <h5 class="card-title">{{ destination.country }}</h5>
+          <p class="card-text">{{ destination.description }}</p>
+          <p class="card-text"> next available date {{ destination.strtdate }}</p>
+          <p class="card-text">1 Person, 1 week {{ destination.priceAnclsv }} all inklusive €</p>
+          <a class="btn btn-warning" (click)="addToCart(destination)">Book now!</a>
         </div>
       
     
@@ -35,12 +34,5 @@
  <!--colums-->
   
 
- <p *ngIf="destinations.description ">
-     
-    
-  
 
- </p>
-
-</div>
 </div>

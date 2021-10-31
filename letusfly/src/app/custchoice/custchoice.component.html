@@ -1,44 +1,28 @@
 <div id="custback">
-  <img src="assets/photos/running.png" alt="" height="100vh">
+  
   <h1 class="text-center text-warning" >Your almost there!</h1>
-  <div class="card mb-3 bg-warning border-0 opacity-75">
-    <img src="assets/photos/globus.jpeg" class="card-img-top" alt="..." height="400vw">
-    <div class="card-body">
-      <h5 class="card-title">My trip to ...</h5>
-      <p class="card-text">Nice choice, fill in the fields below to give us more detailed information ..</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <img src="assets/photos/running.png" alt="" height="125vh">
+  <!-- below in this card i put  travel optional to organize the logistics for the chosen direction-->
     </div>
-    <!-- below in this card i put  travel optional to organize the logistics for the chosen direction-->
-    <div class="input-group mb-3">
-        <button class="btn btn-outline-secondary" type="button">Select price offer</button>
-        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-          <option selected>Choose...</option>
-          <option value="1">20% Family -discount</option>
-          <option value="2">10% Educational-discount</option>
-          <option value="3">None</option>
-        </select>
-      </div>
-
-
-      <div class="input-group mb-3">
-        <button class="btn btn-outline-secondary" type="button">Tell us in</button>
-        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-          <option selected>What class</option>
-          <option value="1">1st class</option>
-          <option value="2">2nd class</option>
-          <option value="3">3rd class</option>
-        </select>
-      </div>
-
-      <div class="input-group mb-3">
-        <button class="btn btn-outline-secondary" type="button">Select your </button>
-        <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-          <option selected>accomodation</option>
-          <option value="1">All inclusive</option>
-          <option value="2">Only travel</option>
-          
-        </select>
+    <div class="row row-cols row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col" *ngFor="let choice of items">
+          <div class="card m-2" style="width:18rem;">
+              <img src=".." class="img-fluid rounded-start" alt="{{ choice.destination }}">
+              <div class="card-header">
+                  <h5 class="card-title">{{ choice.country }}</h5>
+              </div>
+              <div class="card-body">
+                  <p class="card-text">{{ choice.description }}
+                  </p>
+                  <p class="card-text">Start date : {{ choice.strtdate }}
+                  </p>
+                  <p class="card-text">Duration : {{ choice.Hotel }}
+                  </p>
+                  <p class="card-text h3">Price: € {{ choice.priceAnclsv }}</p>
+              </div>
+              <div class="card-footer text-end">
+                  <p class="h5 btn btn-success text-white">Booked</p>
+              </div>
+          </div>
       </div>
   </div>
-  
-</div>
