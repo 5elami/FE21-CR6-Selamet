@@ -17,7 +17,7 @@ export class CustchoiceComponent implements OnInit {
 }*/
   ngOnInit(): void {
     this.items = this.cs.getItems();
-    this.items = this.cs.clearCart();
+    //this.items = this.cs.clearCart();
   }
 
 }
